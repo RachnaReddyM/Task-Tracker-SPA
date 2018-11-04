@@ -1,0 +1,31 @@
+Task Tracker SPA App:
+
+https://tasks3.rachnareddym.com/
+
+Flow of the application:
+1. User should register with name, email ID and password.
+   -- All are mandatory fields.
+   -- Email ID should be a valid email, and 3 special characters are allowed like . # _
+   -- Password should be of minimum 8 characters
+2. On clicking "register" on the registration form, the user will be successfully created.
+3. Upon registration, the user details along with implicitly generated user ID
+   are stored in the users table.
+4. With the registered email ID and password, user can login and create or view tasks.
+5. User can create a task by entering the below details:
+   --> Title : holds the title of the tasks
+   --> Description : holds the detailed description of the tasks
+   --> Assignor : Owner of the task. This is pre-loaded with ID of
+                  the logged-in user.
+   --> Assignee : A dropdown that consists of all the registered users in the system.
+   --> Completed : Set to default as false. Should be marked once the assignee
+                   completes the task.
+   --> Time Taken: This is a field which is a multiple of 15. User should enter the time taken to complete the task.
+
+6. Title, Description, Assignee(Dropdown) are mandatory fields.
+7. Once the "Add task" is clicked, the task is created and the details are displayed below.
+8. On this page, user can click on the "clear" button to clear the form and add a new task.
+9. These task details are stored on the tasks table on the database.
+10. To edit a task, the "Edit Task" button can to be clicked for that particular task,
+    and the details will be loaded to the form. Then user can edit and "Add task".
+11. User can click on the "Delete Task" button, to delete the task. It will be deleted from the databse.
+12. User can log out by clicking on the "log out" button on the Navigation.
